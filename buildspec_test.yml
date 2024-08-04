@@ -12,7 +12,7 @@ phases:
       - cd ./my-app
       - echo "Listing files in the my-app directory..."
       - ls -al
-      - echo "Installing npm packages..."
+      - echo "Installing npm packages...."
       - npm install
   build:
     commands:
