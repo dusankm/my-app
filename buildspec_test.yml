@@ -6,8 +6,13 @@ phases:
       nodejs: latest
   pre_build:
     commands:
+      - echo "Listing files in the current directory..."
+      - ls -al
+      - echo "Changing to my-app directory..."
       - cd ./my-app
-      - echo Installing npm packages...
+      - echo "Listing files in the my-app directory..."
+      - ls -al
+      - echo "Installing npm packages..."
       - npm install
   build:
     commands:
